@@ -1,0 +1,6 @@
+# Health Vault — root .htaccess
+# Prevent directory listing at the site root.
+Options -Indexes
+
+# Friendly default document.
+DirectoryIndex index.php
