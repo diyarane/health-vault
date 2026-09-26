@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Binaural metal tubes & spring -->
+    <path d="M 180,75 C 180,45 155,30 142,25" stroke-width="6"/>
+    <path d="M 220,75 C 220,45 245,30 258,25" stroke-width="6"/>
+    <circle cx="140" cy="24" r="7" fill="#ffffff" stroke="none"/>
+    <circle cx="260" cy="24" r="7" fill="#ffffff" stroke="none"/>
+    <path d="M 180,75 L 180,95 A 35,35 0 0,1 200,130 L 200,165 C 200,240 140,290 85,270 C 35,250 30,180 75,140 C 120,100 190,100 200,130" stroke-width="7"/>
+    <line x1="162" y1="90" x2="238" y2="90" stroke-width="5"/>
+    
+    <!-- Flexible tubing leading to chestpiece -->
+    <path d="M 200,165 C 200,260 260,350 340,350 C 420,350 450,280 430,210 C 410,140 330,140 310,210 C 295,260 320,310 370,300" stroke-width="8"/>
+    
+    <!-- Chestpiece / Diaphragm -->
+    <circle cx="370" cy="300" r="28" fill="rgba(255,255,255,0.12)" stroke-width="6"/>
+    <circle cx="370" cy="300" r="18" stroke-width="4"/>
+    <circle cx="370" cy="300" r="6" fill="#ffffff" stroke="none"/>
+    
+    <!-- Medical Crosses -->
+    <path d="M 380,55 L 380,105 M 355,80 L 405,80" stroke-width="10"/>
+    <path d="M 450,150 L 450,180 M 435,165 L 465,165" stroke-width="6"/>
+    <path d="M 80,50 L 80,75 M 67,62 L 93,62" stroke-width="5"/>
+    
+    <!-- Heart rhythm line -->
+    <path d="M 250,60 L 275,60 L 283,45 L 295,80 L 307,35 L 319,68 L 328,60 L 345,60" stroke-width="4"/>
+    
+    <!-- Decorative subtle dots -->
+    <circle cx="430" cy="90" r="4" fill="#ffffff" stroke="none"/>
+    <circle cx="330" cy="110" r="3" fill="#ffffff" stroke="none"/>
+    <circle cx="280" cy="310" r="4" fill="#ffffff" stroke="none"/>
+    <circle cx="120" cy="330" r="5" fill="#ffffff" stroke="none"/>
+  </g>
+</svg>

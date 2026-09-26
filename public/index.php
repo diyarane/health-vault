@@ -7,13 +7,16 @@ include __DIR__ . '/../includes/header.php';
 ?>
 
 <section class="hero">
-  <h1>Your medical information, instantly accessible.</h1>
-  <p>
-    Health Vault stores your essential medical details securely and lets you retrieve
-    them anytime with a single reference number — no paperwork, no delays, ready for
-    emergencies, hospital visits, and routine checkups.
-  </p>
-  <a class="btn" href="<?= h(site_base_url()) ?>/public/medical-card.php">Access My Medical Card</a>
+  <div class="hero-content">
+    <h1>Your medical information, instantly accessible.</h1>
+    <p>
+      Health Vault stores your essential medical details securely and lets you retrieve
+      them anytime with a single reference number — no paperwork, no delays, ready for
+      emergencies, hospital visits, and routine checkups.
+    </p>
+    <a class="btn" href="<?= h(site_base_url()) ?>/public/medical-card.php">Access My Medical Card</a>
+  </div>
+  <div class="hero-visual"></div>
 </section>
 
 <section class="feature-grid">

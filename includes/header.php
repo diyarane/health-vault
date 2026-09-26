@@ -13,7 +13,7 @@ $current = basename($_SERVER['SCRIPT_NAME']);
 <title><?= h(($pageTitle ?? 'Home') . ' — ' . APP_NAME) ?></title>
 <link rel="stylesheet" href="<?= h($base) ?>/assets/css/style.css">
 </head>
-<body>
+<body class="<?= $current === 'index.php' ? 'page-home' : '' ?>">
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="<?= h($base) ?>/public/index.php">
