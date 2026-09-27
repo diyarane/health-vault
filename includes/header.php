@@ -11,9 +11,9 @@ $current = basename($_SERVER['SCRIPT_NAME']);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= h(($pageTitle ?? 'Home') . ' — ' . APP_NAME) ?></title>
-<link rel="stylesheet" href="<?= h($base) ?>/assets/css/style.css">
+<link rel="stylesheet" href="<?= h($base) ?>/assets/css/style.css?v=<?= time() ?>">
 </head>
-<body class="<?= $current === 'index.php' ? 'page-home' : '' ?>">
+<body class="<?= $current === 'index.php' ? 'page-home' : ($current === 'about.php' ? 'page-about' : '') ?>">
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="<?= h($base) ?>/public/index.php">

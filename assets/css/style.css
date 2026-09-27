@@ -386,3 +386,229 @@ tr:last-child td { border-bottom: none; }
   .admin-sidebar { width: 100%; }
   .admin-nav { flex-direction: row; flex-wrap: wrap; }
 }
+
+/* =====================================================
+   About Page — body.page-about
+   Scoped styles. Uses abt- prefix.
+   !important used on layout-critical properties to
+   prevent any global CSS from overriding the card grid.
+   ===================================================== */
+
+body.page-about .site-main {
+  padding: 14px 0 0 !important;
+}
+
+/* Shared card base */
+body.page-about .abt-card {
+  background: #ffffff !important;
+  border: 1px solid #d8e2e1 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 12px rgba(0, 70, 65, 0.08) !important;
+}
+
+/* === ROW 1: Intro card === */
+body.page-about .abt-intro {
+  padding: 20px 24px !important;
+  margin-bottom: 14px !important;
+  border-left: 4px solid #0f766e !important;
+}
+body.page-about .abt-intro-top {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+body.page-about .abt-badge {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #ccfbf1 !important;
+  color: #0b544e;
+  font-size: 0.73rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+body.page-about .abt-badge svg {
+  stroke: #0b544e;
+}
+body.page-about .abt-heading {
+  font-size: 1.25rem;
+  margin: 0 !important;
+  color: #1f2937;
+  line-height: 1.2;
+}
+body.page-about .abt-desc {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: #334155;
+  margin: 0 !important;
+}
+body.page-about .abt-updated {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 4px;
+  color: #6b7280;
+  font-size: 0.72rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+body.page-about .abt-updated svg {
+  stroke: #6b7280;
+}
+
+/* === ROW 2: Feature cards grid === */
+body.page-about .abt-row-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 10px 0 !important;
+}
+body.page-about .abt-features {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  width: 100% !important;
+  margin-bottom: 14px !important;
+}
+body.page-about .abt-feature {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 20px !important;
+  min-height: 155px !important;
+}
+body.page-about .abt-icon-box {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 10px;
+  background: #ccfbf1 !important;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+body.page-about .abt-icon-box svg {
+  stroke: #0f766e;
+}
+body.page-about .abt-feature h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 5px 0 !important;
+  color: #1f2937;
+  line-height: 1.25;
+}
+body.page-about .abt-feature p {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #6b7280;
+  margin: 0 !important;
+}
+
+/* === ROW 3: Statistics card === */
+body.page-about .abt-stats-card {
+  padding: 16px 24px !important;
+  margin-bottom: 14px !important;
+}
+body.page-about .abt-stats {
+  display: grid !important;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr !important;
+  align-items: center;
+  text-align: center;
+  width: 100% !important;
+}
+body.page-about .abt-stat {
+  padding: 4px 6px;
+}
+body.page-about .abt-stat-sep {
+  width: 1px !important;
+  height: 36px !important;
+  background: #d8e2e1 !important;
+}
+body.page-about .abt-stat-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0b544e;
+  line-height: 1.1;
+}
+body.page-about .abt-stat-lbl {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* === ROW 4: Bottom two cards === */
+body.page-about .abt-bottom {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 16px !important;
+  width: 100% !important;
+  margin-bottom: 14px !important;
+}
+body.page-about .abt-info {
+  padding: 20px !important;
+}
+body.page-about .abt-info-head {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+body.page-about .abt-info-head h4 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 !important;
+  line-height: 1.25;
+}
+body.page-about .abt-info p {
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: #334155;
+  margin: 0 !important;
+}
+
+/* Vision card — teal background override */
+body.page-about .abt-vision {
+  background: linear-gradient(135deg, #0f766e 0%, #0b544e 100%) !important;
+  color: #ffffff !important;
+  border-color: #0b544e !important;
+}
+body.page-about .abt-vision .abt-info-head h4 {
+  color: #ffffff !important;
+}
+body.page-about .abt-vision .abt-info-head svg {
+  stroke: #ffffff;
+}
+body.page-about .abt-vision p {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+/* Responsive: stack on smaller screens only */
+@media (max-width: 960px) {
+  body.page-about .abt-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 840px) {
+  body.page-about .abt-bottom {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 768px) {
+  body.page-about .abt-stats {
+    grid-template-columns: 1fr auto 1fr !important;
+  }
+  body.page-about .abt-stat-sep:nth-child(4) {
+    display: none !important;
+  }
+}
+@media (max-width: 580px) {
+  body.page-about .abt-features {
+    grid-template-columns: 1fr !important;
+  }
+}
